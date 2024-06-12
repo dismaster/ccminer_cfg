@@ -20,9 +20,11 @@
         }],
 
         "user": "RRV4nWAxg9dVLY1vavmpGKq3s3N8wMHqZy.RIG1",
+        "pass": "",
         "algo": "verus",
         "threads": 8,
         "cpu-priority": 1,
+        "cpu-affinity": -1,
         "retry-pause": 5,
         "api-allow": "0/0",
         "api-bind": "0.0.0.0:4068"
