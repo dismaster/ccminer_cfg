@@ -39,7 +39,10 @@ chmod +x ccminer start.sh 2>&1 >/dev/null
 cd ~/.termux/boot && wget wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/boot_start && chmod -R 777 ~/.termux/boot 2>&1 >/dev/null
 echo -e "${R}-> ${NC}Downloading config: ${LG}COMPLETE${NC}"
 echo -e "\n"
-cd ~ && rm ncc.sh && wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/ncc.sh && chmod 777 ncc.sh 2>&1 >/dev/null
+cd ~ 2>&1 >/dev/null
+rm ncc.sh 2>&1 >/dev/null
+wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/ncc.sh 2>&1 >/dev/null
+chmod 777 ncc.sh 2>&1 >/dev/null
 su -c mkdir .cache 2>&1 >/dev/null
 su -c chown u0_a179:u0_a179 .cache 2>&1 >/dev/null
 su -c chmod 777 .cache 2>&1 >/dev/null
