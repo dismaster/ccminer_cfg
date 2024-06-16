@@ -45,9 +45,7 @@ cd ~ > /dev/null 2>&1
 rm ncc.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/ncc.sh > /dev/null 2>&1
 chmod 777 ncc.sh > /dev/null 2>&1
-su -c mkdir .cache > /dev/null 2>&1
-su -c chown u0_a179:u0_a179 .cache > /dev/null 2>&1
-su -c chmod 777 .cache > /dev/null 2>&1
+mkdir ~/.cache > /dev/null 2>&1
 (crontab -l 2>/dev/null; echo "*/5 * * * * ~/ncc.sh") | crontab - > /dev/null 2>&1
 echo -e "${R}-> ${NC}Installing NetworkCheck: ${LG}COMPLETE${NC}"
 ~/ccminer/start.sh > /dev/null 2>&1
