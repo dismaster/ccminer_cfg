@@ -21,19 +21,14 @@ echo -e "\n"
 yes | pkg update > /dev/null 2>&1
 yes | pkg upgrade > /dev/null 2>&1
 echo -e "${R}-> ${NC}Software Update: ${LG}COMPLETE${NC}"
-echo -e "\n"
 yes | pkg install cronie termux-services libjansson wget nano screen openssh > /dev/null 2>&1
 echo -e "${R}->${NC} Additional Software: ${LG}COMPLETE${NC}"
-echo -e "\n"
 yes Passw0rd! | passwd u0_a118 > /dev/null 2>&1
 echo -e "${R}-> ${NC}Password change: ${LG}COMPLETE${NC}"
-echo -e "\n"
 sshd 2>&1 > /dev/null 2>&1
 echo -e "${R}-> ${NC}Starting SSHD: ${LG}COMPLETE${NC}"
-echo -e "\n"
 mkdir ~/.termux/boot && mkdir ~/ccminer && cd ~/ccminer > /dev/null 2>&1
 echo -e "${R}-> ${NC}Creating Miner & Boot Folders: ${LG}COMPLETE${NC}"
-echo -e "\n"
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer > /dev/null 2>&1
 wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/start.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/config_luckpool-hybrid.json  > /dev/null 2>&1
@@ -43,7 +38,6 @@ cd ~/.termux/boot > /dev/null 2>&1
 wget wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/boot_start > /dev/null 2>&1
 chmod -R 777 ~/.termux/boot > /dev/null 2>&1
 echo -e "${R}-> ${NC}Downloading config: ${LG}COMPLETE${NC}"
-echo -e "\n"
 cd ~ > /dev/null 2>&1
 rm ncc.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/ncc.sh > /dev/null 2>&1
@@ -53,9 +47,8 @@ su -c chown u0_a179:u0_a179 .cache > /dev/null 2>&1
 su -c chmod 777 .cache > /dev/null 2>&1
 (crontab -l 2>/dev/null; echo "*/5 * * * * ~/ncc.sh") | crontab - > /dev/null 2>&1
 echo -e "${R}-> ${NC}Installing NetworkCheck: ${LG}COMPLETE${NC}"
-echo -e "\n"
 ~/ccminer/start.sh > /dev/null 2>&1
 echo -e "${R}-> ${NC}Starting Miner: ${LG}COMPLETE${NC}"
 echo -e "\n"
-echo -e "${R}-> ${NC}SETUP: ${LG}COMPLETE${NC}"
+echo -e "${R}-> ${B}VERUS ${NC}SETUP: ${LG}COMPLETE${NC}"
 echo -e "\n"
