@@ -33,10 +33,12 @@ echo -e "\n"
 mkdir ~/.termux/boot && mkdir ~/ccminer && cd ~/ccminer 2>&1 >/dev/null
 echo -e "${R}-> ${NC}Creating Miner & Boot Folders: ${LG}COMPLETE${NC}"
 echo -e "\n"
-wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer && wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/start.sh 2>&1 >/dev/null
-wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/config_luckpool-hybrid.json && mv config_luckpool-hybrid.json config.json 2>&1 >/dev/null
-chmod +x ccminer start.sh 2>&1 >/dev/null
-cd ~/.termux/boot && wget wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/boot_start && chmod -R 777 ~/.termux/boot 2>&1 >/dev/null
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer && wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/start.sh
+wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/config_luckpool-hybrid.json && mv config_luckpool-hybrid.json config.json
+chmod +x ccminer start.sh
+cd ~/.termux/boot
+wget wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/boot_start
+chmod -R 777 ~/.termux/boot
 echo -e "${R}-> ${NC}Downloading config: ${LG}COMPLETE${NC}"
 echo -e "\n"
 cd ~ 2>&1 >/dev/null
