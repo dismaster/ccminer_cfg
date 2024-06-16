@@ -24,7 +24,7 @@ echo -e "\n"
 yes | pkg update > /dev/null 2>&1
 yes | pkg upgrade > /dev/null 2>&1
 echo -e "${R}-> ${NC}Software Update: ${LG}COMPLETE${NC}"
-yes | pkg install cronie termux-services libjansson wget nano screen openssh > /dev/null 2>&1
+yes | pkg install cronie termux-services libjansson wget nano screen nmap openssh > /dev/null 2>&1
 echo -e "${R}->${NC} Additional Software: ${LG}COMPLETE${NC}"
 yes ${ssh_passwd} | passwd u0_a118 > /dev/null 2>&1
 echo -e "${R}-> ${NC}Password change: ${LG}COMPLETE${NC}"
