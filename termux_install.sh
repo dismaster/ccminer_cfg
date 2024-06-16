@@ -18,8 +18,9 @@ echo -e "${LC}#              v1.0 | by Ch3ckr             ${LC}#${NC}"
 echo -e "${LC}#############################################${NC}"
 
 echo -e "\n"
-yes | pkg update && pkg upgrade > /dev/null 2>&1
-echo -e "${R}-> ${NC}Software Update: COMPLETE"
+yes | pkg update > /dev/null 2>&1
+yes | pkg upgrade > /dev/null 2>&1
+echo -e "${R}-> ${NC}Software Update: ${LG}COMPLETE${NC}"
 echo -e "\n"
 yes | pkg install cronie termux-services libjansson wget nano screen openssh > /dev/null 2>&1
 echo -e "${R}->${NC} Additional Software: ${LG}COMPLETE${NC}"
