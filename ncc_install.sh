@@ -1,6 +1,7 @@
 echo "Setting up Network Services"
 yes | pkg install cronie termux-services
 cd ~
+rm ncc.sh
 wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/ncc.sh
 chmod 777 ncc.sh
 su -c mkdir .cache
