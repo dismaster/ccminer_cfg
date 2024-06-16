@@ -5,3 +5,9 @@ if [ ! "$x" = "" ]; then
         su -c svc wifi disable
         su -c svc wifi enable
 fi
+
+result=`ps aux | grep -i "ccminer" | grep -v "grep" | wc -l`
+if [ $result -ge 0 ]
+   then
+        ~/ccminer/start.sh > /dev/null 2>&1
+fi
