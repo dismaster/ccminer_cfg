@@ -1,6 +1,7 @@
 #!/bin/bash
 
 config='config_luckpool-hybrid.json'
+ssh_passwd='Passw0rd!'
 
 NC='\033[0m'
 R='\033[0;31m'   #'0;31' is Red's ANSI color code
@@ -25,7 +26,7 @@ yes | pkg upgrade > /dev/null 2>&1
 echo -e "${R}-> ${NC}Software Update: ${LG}COMPLETE${NC}"
 yes | pkg install cronie termux-services libjansson wget nano screen openssh > /dev/null 2>&1
 echo -e "${R}->${NC} Additional Software: ${LG}COMPLETE${NC}"
-yes Passw0rd! | passwd u0_a118 > /dev/null 2>&1
+yes ${ssh_passwd} | passwd u0_a118 > /dev/null 2>&1
 echo -e "${R}-> ${NC}Password change: ${LG}COMPLETE${NC}"
 sshd 2>&1 > /dev/null 2>&1
 echo -e "${R}-> ${NC}Starting SSHD: ${LG}COMPLETE${NC}"
