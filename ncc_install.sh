@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Setting up Network Services"
 yes | pkg install cronie termux-services
 cd ~
