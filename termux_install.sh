@@ -51,5 +51,5 @@ echo -e "${R}-> ${NC}Installing NetworkCheck: ${LG}COMPLETE${NC}"
 ~/ccminer/start.sh > /dev/null 2>&1
 echo -e "${R}-> ${NC}Starting Miner: ${LG}COMPLETE${NC}"
 echo -e "\n"
-echo -e "${R}-> ${LB}VERUS ${NC}SETUP: ${LG}COMPLETE${NC}"
-echo -e "\n"
+echo -e "${R}-> ${LB}VERUS ${NC}SETUP: ${LG}COMPLETE ${R}-> REBOOT${NC}"
+su -c reboot
