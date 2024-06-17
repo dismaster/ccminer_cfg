@@ -52,4 +52,5 @@ echo -e "${R}-> ${NC}Installing NetworkCheck: ${LG}COMPLETE${NC}"
 echo -e "${R}-> ${NC}Starting Miner: ${LG}COMPLETE${NC}"
 echo -e "\n"
 echo -e "${R}-> ${LB}VERUS ${NC}SETUP: ${LG}COMPLETE ${R}-> REBOOT${NC}"
+sleep 5
 su -c reboot
