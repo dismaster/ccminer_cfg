@@ -7,7 +7,7 @@ if [ ! "$x" = "" ]; then
 fi
 
 result=`ps aux | grep -i "ccminer" | grep -v "grep" | wc -l`
-if [ $result -ge 0 ]
+if [ $result -lt 2 ]
    then
         ~/ccminer/start.sh > /dev/null 2>&1
 fi
