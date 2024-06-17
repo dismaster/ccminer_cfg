@@ -35,7 +35,7 @@ echo -e "${R}-> ${NC}Creating Miner & Boot Folders: ${LG}COMPLETE${NC}"
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/a53/ccminer > /dev/null 2>&1
 wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/start.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/${config}  > /dev/null 2>&1
-mv config_luckpool-hybrid.json config.json > /dev/null 2>&1
+mv ${config} config.json > /dev/null 2>&1
 chmod +x ccminer start.sh > /dev/null 2>&1
 cd ~/.termux/boot > /dev/null 2>&1
 wget wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/boot_start > /dev/null 2>&1
