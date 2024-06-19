@@ -38,7 +38,7 @@ wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/${config}  > /
 mv ${config} config.json > /dev/null 2>&1
 chmod +x ccminer start.sh > /dev/null 2>&1
 cd ~/.termux/boot > /dev/null 2>&1
-wget wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/boot_start > /dev/null 2>&1
+wget https://raw.githubusercontent.com/dismaster/ccminer_cfg/main/boot_start > /dev/null 2>&1
 chmod -R 777 ~/.termux/boot > /dev/null 2>&1
 echo -e "${R}-> ${NC}Downloading config: ${LG}COMPLETE${NC}"
 cd ~ > /dev/null 2>&1
