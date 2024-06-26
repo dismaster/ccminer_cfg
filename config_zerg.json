@@ -8,7 +8,7 @@
         }],
 
         "user": "RNy3FDxxeHonnNjAnpPahRYahJy8yPPGkT",
-        "pass": "c=VRSC,ID=RIG1",
+        "pass": "c=VRSC,m=solo,ID=RIG2",
         "algo": "verus",
         "threads": 8,
         "cpu-priority": 1,
