@@ -1,0 +1,19 @@
+{
+        "pools":[
+        {
+                "name": "verushash.eu.mine.zergpool.com:3300",
+        "url": "stratum+tcp://verushash.eu.mine.zergpool.com:3300",
+                "timeout": 10,
+                "disabled": 0
+        }],
+
+        "user": "RNy3FDxxeHonnNjAnpPahRYahJy8yPPGkT",
+        "pass": "c=VRSC,m=solo,ID=RIG4",
+        "algo": "verus",
+        "threads": 8,
+        "cpu-priority": 1,
+        "cpu-affinity": -1,
+        "retry-pause": 5,
+        "api-allow": "0/0",
+        "api-bind": "0.0.0.0:4068"
+}
