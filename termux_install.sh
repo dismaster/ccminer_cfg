@@ -1,6 +1,6 @@
 #!/bin/bash
 
-config='config_luckpool-hybrid.json'
+config='config.json'
 ssh_passwd='Passw0rd!'
 
 NC='\033[0m'
